@@ -1,7 +1,7 @@
-Role Name
+webapp-role
 =========
 
-A brief description of the role goes here.
+This role should download python web-app image from hub.docker.com and run it on a specified port
 
 Requirements
 ------------

@@ -1,2 +1,5 @@
 ---
 # defaults file for roles/web-role
+latest_build: '70'
+src_port: '5000'
+dst_port: '5000'

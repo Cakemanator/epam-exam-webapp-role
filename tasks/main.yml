@@ -1,2 +1,9 @@
 ---
 # tasks file for roles/web-role
+- name: Create a container
+  docker_container:
+    name: webapp-container
+    image: korados/epamexam:"{{ latest_build }}"
+    ports:
+      - "{{ src_port }}:{{ dst_port }}"
+    detach: true

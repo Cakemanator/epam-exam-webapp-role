@@ -4,8 +4,9 @@
   docker_container:
     name: webapp-container
     image: korados/epamexam:70
+    detach: true
     ports:
       - "{{ src_port }}:{{ dst_port }}"
-    networks: '{{ item }}'
-    with_items: '{{ docker_net_name }}'
-    detach: true
+    networks:
+      - name: '{{item}}'
+  with_items: '{{ docker_net_name }}'

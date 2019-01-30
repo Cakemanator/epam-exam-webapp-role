@@ -2,7 +2,7 @@
 # tasks file for roles/web-role
 - name: Create a container
   docker_container:
-    name: webapp-container
+    name: '{{ docker_container_name }}'
     image: korados/epamexam:70
     detach: true
     ports:

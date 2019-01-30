@@ -6,4 +6,5 @@
     image: korados/epamexam:70
     ports:
       - "{{ src_port }}:{{ dst_port }}"
+    networks: '{{ docker_net_name }}'
     detach: true

@@ -3,4 +3,5 @@
 latest_build: 70
 src_port: 5000
 dst_port: 5000
+docker_net_name: exam_network
 

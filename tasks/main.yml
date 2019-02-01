@@ -5,6 +5,7 @@
     name: '{{ docker_container_name }}'
     image: korados/epamexam:70
     detach: true
+    hostname: '{{ hostname }}'
     ports:
       - "{{ src_port }}:{{ dst_port }}"
     networks:

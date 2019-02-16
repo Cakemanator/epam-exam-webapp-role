@@ -6,3 +6,5 @@ dst_port: 5000
 docker_container_name: webapp-container
 hostname: python-webapp
 docker_net_name: [exam_network]
+docker_image_name: korados/epamexam
+docker_image_build: 2
